@@ -83,7 +83,7 @@ export default function ProfilePage() {
               <MDBCol md="6">
                 <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
-                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> Containerization and Orchestration</MDBCardText>
+                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Containerization and Orchestration</span></MDBCardText>
                     <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Kubernetes</MDBCardText>
                     <MDBProgress className="rounded">
                       <MDBProgressBar width={90} valuemin={0} valuemax={100} />
@@ -105,7 +105,7 @@ export default function ProfilePage() {
               <MDBCol md="6">
                 <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
-                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> CI/CD Tools</MDBCardText>
+                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1"> CI/CD Tools</span></MDBCardText>
                     <MDBCardText className="mb-1" style={{ fontSize: '.77rem', maxHeight: '300px', overflowY: 'auto' }}>Jenkins</MDBCardText>
                     <MDBProgress className="rounded">
                       <MDBProgressBar width={100} valuemin={0} valuemax={100} />
@@ -137,7 +137,7 @@ export default function ProfilePage() {
               <MDBCol md="6">
                 <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
-                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> IaC </MDBCardText>
+                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Infrastructure as Code</span></MDBCardText>
                     <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Terraform</MDBCardText>
                     <MDBProgress className="rounded">
                       <MDBProgressBar width={85} valuemin={0} valuemax={100} />
