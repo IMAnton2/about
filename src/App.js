@@ -147,6 +147,12 @@ export default function ProfilePage() {
                     </MDBProgress>
 
                   </MDBCardBody>
+                  
+                  
+                </MDBCard>
+              </MDBCol>
+              <MDBCol md="6">
+                <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
                     <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> CI/CD Tools</MDBCardText>
                     <MDBCardText className="mb-1" style={{ fontSize: '.77rem', maxHeight: '300px', overflowY: 'auto' }}>Jenkins</MDBCardText>
@@ -175,6 +181,12 @@ export default function ProfilePage() {
                     </MDBProgress>
 
                   </MDBCardBody>
+                  
+                  
+                </MDBCard>
+              </MDBCol>
+              <MDBCol md="6">
+                <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
                     <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> CI/CD Tools</MDBCardText>
                     <MDBCardText className="mb-1" style={{ fontSize: '.77rem', maxHeight: '300px', overflowY: 'auto' }}>Jenkins</MDBCardText>
@@ -203,6 +215,12 @@ export default function ProfilePage() {
                     </MDBProgress>
 
                   </MDBCardBody>
+                  
+                  
+                </MDBCard>
+              </MDBCol>
+              <MDBCol md="6">
+                <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
                     <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> CI/CD Tools</MDBCardText>
                     <MDBCardText className="mb-1" style={{ fontSize: '.77rem', maxHeight: '300px', overflowY: 'auto' }}>Jenkins</MDBCardText>
@@ -231,6 +249,7 @@ export default function ProfilePage() {
                     </MDBProgress>
 
                   </MDBCardBody>
+                  
                   
                 </MDBCard>
               </MDBCol>
