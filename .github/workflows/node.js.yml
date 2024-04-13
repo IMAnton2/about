@@ -33,5 +33,5 @@ jobs:
     - run: git clone https://imanton2:$GH_TOKEN@github.com/imanton2/about.git --branch=gh-pages gh-pages --no-checkout
     - run: mv build/* gh-pages/
     - run: pwd
-    - run: cd gh-pages/; git config user.email "imanton2@gmail.com"; git config user.name "Anton"; git add --all; ls -la; git status; git commit -am 'update'; git status; echo aaaaaaaaaaaaaaaaaaaaaaa; git push https://imanton2:${GH_TOKEN}@github.com/imanton2/about.git
+    - run: cd gh-pages/; git config user.email "imanton2@gmail.com"; git config user.name "Anton"; git add --all; ls -la; git status; git commit -am 'update'; git status; echo aaaaaaaaaaaaaaaaaaaaaaa; git push https://imanton2:$GH_TOKEN@github.com/imanton2/about.git
     
