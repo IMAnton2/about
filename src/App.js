@@ -51,7 +51,7 @@ export default function ProfilePage() {
                 <p className="text-muted mb-4">Center, Isreal</p>
                 <div className="d-flex justify-content-center mb-2">
                   <MDBBtn>Follow</MDBBtn>
-                  <MDBBtn onClick={() => window.open(CV, '_blank')} outline className="ms-1">Message</MDBBtn>
+                  <MDBBtn onClick={() => window.open(CV, '_blank')} outline className="ms-1">My CV</MDBBtn>
                 </div>
               </MDBCardBody>
             </MDBCard>
