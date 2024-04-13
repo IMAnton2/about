@@ -1,3 +1,4 @@
+import anton2 from './anton2.svg'
 import React from 'react';
 import {
   MDBCol,
@@ -40,7 +41,7 @@ export default function ProfilePage() {
             <MDBCard className="mb-4">
               <MDBCardBody className="text-center">
                 <MDBCardImage
-                  src="%PUBLIC_URL%/favicon.ico"
+                  src={anton2}
                   alt="avatar"
                   className="rounded-circle"
                   style={{ width: '150px' }}
