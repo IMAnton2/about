@@ -144,30 +144,7 @@ export default function ProfilePage() {
                     <MDBProgress className="rounded">
                       <MDBProgressBar width={66} valuemin={0} valuemax={100} />
                     </MDBProgress>
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={66} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={66} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={66} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={66} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={66} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={66} valuemin={0} valuemax={100} />
-                    </MDBProgress>
+
                   </MDBCardBody>
                   
                 </MDBCard>
