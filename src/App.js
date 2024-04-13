@@ -101,17 +101,17 @@ export default function ProfilePage() {
                     <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> Containerization and Orchestration</MDBCardText>
                     <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Kubernetes</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={80} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={90} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Tanzu</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={72} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={85} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Docker</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={89} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
                     </MDBProgress>
                   </MDBCardBody>
                 </MDBCard>
@@ -128,22 +128,22 @@ export default function ProfilePage() {
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>ArgoCD</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={72} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={75} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Azure DevOps</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={89} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={90} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitHub Actions</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={55} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={75} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={66} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={80} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                   </MDBCardBody>
