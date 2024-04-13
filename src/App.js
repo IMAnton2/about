@@ -56,7 +56,7 @@ export default function ProfilePage() {
             </MDBCard>
 
             <MDBCard className="mb-4 mb-lg-0">
-              <MDBCardBody className="p-0" style={{ maxHeight: '300px', overflowY: 'auto' }}>
+              <MDBCardBody className="p-0">
                 <MDBListGroup flush className="rounded-3">
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="github fa-lg" style={{ color: '#333333' }} />
@@ -120,7 +120,7 @@ export default function ProfilePage() {
                 <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
                     <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> CI/CD Tools</MDBCardText>
-                    <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Jenkins</MDBCardText>
+                    <MDBCardText className="mb-1" style={{ fontSize: '.77rem', maxHeight: '300px', overflowY: 'auto' }}>Jenkins</MDBCardText>
                     <MDBProgress className="rounded">
                       <MDBProgressBar width={80} valuemin={0} valuemax={100} />
                     </MDBProgress>
