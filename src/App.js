@@ -94,7 +94,7 @@ export default function ProfilePage() {
               </MDBCardBody>
             </MDBCard>
 
-            <MDBRow>
+            <MDBRow className="overflow-auto">
               <MDBCol md="6">
                 <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
