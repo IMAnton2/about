@@ -31,7 +31,9 @@ jobs:
     - run: rm -rf .git
     - run: git clone https://imanton2:$GH_TOKEN@github.com/imanton2/about.git --branch=gh-pages gh-pages --no-checkout
     - run: mv build/* gh-pages/
+    - run: pwd
     - run: cd gh-pages/
+    - run: pwd
     - run: ls -la
     - run: git add --all
     - run: git commit -am 'update'
