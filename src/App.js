@@ -86,7 +86,7 @@ export default function ProfilePage() {
                     <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Containerization and Orchestration</span></MDBCardText>
                     <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Kubernetes</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={90} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Tanzu</MDBCardText>
@@ -145,12 +145,12 @@ export default function ProfilePage() {
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Ansible</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={90} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Puppet</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={85} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={80} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                   </MDBCardBody>
