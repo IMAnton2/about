@@ -35,7 +35,7 @@ export default function ProfilePage() {
                 <p className="text-muted mb-1">DevOps engineer</p>
                 <p className="text-muted mb-4">Center, Israel</p>
                 <div className="d-flex justify-content-center mb-2">
-                  <MDBBtn onClick={() => window.open('https://wa.me/+972532779634', '_blank')}>WhatsApp</MDBBtn>
+                  <MDBBtn onClick={() => window.open('https://wa.me/+972532779634', '_blank')}>Message me</MDBBtn>
                   <MDBBtn onClick={() => window.open(CV, '_blank')} outline className="ms-1">My CV</MDBBtn>
                 </div>
               </MDBCardBody>
