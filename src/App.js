@@ -1,3 +1,4 @@
+import CV from './CV.pdf';
 import anton2 from './anton2.svg'
 import React from 'react';
 import {
@@ -50,7 +51,7 @@ export default function ProfilePage() {
                 <p className="text-muted mb-4">Center, Isreal</p>
                 <div className="d-flex justify-content-center mb-2">
                   <MDBBtn>Follow</MDBBtn>
-                  <MDBBtn outline className="ms-1">Message</MDBBtn>
+                  <MDBBtn onClick={() => window.open(CV, '_blank')} outline className="ms-1">Message</MDBBtn>
                 </div>
               </MDBCardBody>
             </MDBCard>
