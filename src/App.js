@@ -118,12 +118,12 @@ export default function ProfilePage() {
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Azure DevOps</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={90} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitHub Actions</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={95} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
                     <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
