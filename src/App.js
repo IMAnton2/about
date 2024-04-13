@@ -60,7 +60,7 @@ export default function ProfilePage() {
                 <MDBListGroup flush className="rounded-3">
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="github fa-lg" style={{ color: '#333333' }} />
-                    <MDBCardText>github.com/IMAnton23</MDBCardText>
+                    <MDBCardText>github.com/IMAnton2</MDBCardText>
                   </MDBListGroupItem>
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="linkedin fa-lg" style={{ color: '#3b5998' }} />
