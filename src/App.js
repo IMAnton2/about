@@ -1,5 +1,5 @@
 import CV from './CV.pdf';
-import anton2 from './anton2.svg'
+import anton2 from './anton2.svg';
 import React from 'react';
 import {
   MDBCol,
@@ -10,33 +10,17 @@ import {
   MDBCardBody,
   MDBCardImage,
   MDBBtn,
-  MDBBreadcrumb,
-  MDBBreadcrumbItem,
-  MDBProgress,
-  MDBProgressBar,
   MDBIcon,
   MDBListGroup,
-  MDBListGroupItem
+  MDBListGroupItem,
+  MDBProgress,
+  MDBProgressBar
 } from 'mdb-react-ui-kit';
 
 export default function ProfilePage() {
   return (
     <section style={{ backgroundColor: '#eee' }}>
       <MDBContainer className="py-5">
-        {/* <MDBRow>
-          <MDBCol>
-            <MDBBreadcrumb className="bg-light rounded-3 p-3 mb-4">
-              <MDBBreadcrumbItem>
-                <a href='#'>Home</a>
-              </MDBBreadcrumbItem>
-              <MDBBreadcrumbItem>
-                <a href="#">User</a>
-              </MDBBreadcrumbItem>
-              <MDBBreadcrumbItem active>User Profile</MDBBreadcrumbItem>
-            </MDBBreadcrumb>
-          </MDBCol>
-        </MDBRow> */}
-
         <MDBRow>
           <MDBCol lg="4">
             <MDBCard className="mb-4">
@@ -46,11 +30,12 @@ export default function ProfilePage() {
                   alt="avatar"
                   className="rounded-circle"
                   style={{ width: '150px' }}
-                  fluid />
+                  fluid
+                />
                 <p className="text-muted mb-1">DevOps engineer</p>
-                <p className="text-muted mb-4">Center, Isreal</p>
+                <p className="text-muted mb-4">Center, Israel</p>
                 <div className="d-flex justify-content-center mb-2">
-                  <MDBBtn onClick={() => window.open('https://wa.me/+972532779634', '_blank')}>WhatApp</MDBBtn>
+                  <MDBBtn onClick={() => window.open('https://wa.me/+972532779634', '_blank')}>WhatsApp</MDBBtn>
                   <MDBBtn onClick={() => window.open(CV, '_blank')} outline className="ms-1">My CV</MDBBtn>
                 </div>
               </MDBCardBody>
@@ -60,11 +45,11 @@ export default function ProfilePage() {
               <MDBCardBody className="p-0">
                 <MDBListGroup flush className="rounded-3">
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
-                    <MDBIcon fab icon="github fa-lg" style={{ color: '#333333' }} />
+                    <MDBIcon fab icon="github" style={{ color: '#333333' }} />
                     <MDBCardText>github.com/IMAnton2</MDBCardText>
                   </MDBListGroupItem>
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
-                    <MDBIcon fab icon="linkedin fa-lg" style={{ color: '#3b5998' }} />
+                    <MDBIcon fab icon="linkedin" style={{ color: '#3b5998' }} />
                     <MDBCardText>linkedin.com/in/anton-narodezki</MDBCardText>
                   </MDBListGroupItem>
                 </MDBListGroup>
@@ -152,31 +137,22 @@ export default function ProfilePage() {
               <MDBCol md="6">
                 <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
-                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> CI/CD Tools</MDBCardText>
-                    <MDBCardText className="mb-1" style={{ fontSize: '.77rem', maxHeight: '300px', overflowY: 'auto' }}>Jenkins</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>ArgoCD</MDBCardText>
+                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Skills</span> IaC </MDBCardText>
+                    <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Terraform</MDBCardText>
                     <MDBProgress className="rounded">
                       <MDBProgressBar width={85} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Azure DevOps</MDBCardText>
+                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Ansible</MDBCardText>
                     <MDBProgress className="rounded">
                       <MDBProgressBar width={90} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitHub Actions</MDBCardText>
+                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Puppet</MDBCardText>
                     <MDBProgress className="rounded">
-                      <MDBProgressBar width={95} valuemin={0} valuemax={100} />
+                      <MDBProgressBar width={85} valuemin={0} valuemax={100} />
                     </MDBProgress>
 
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
