@@ -23,7 +23,7 @@ export default function ProfilePage() {
   return (
     <section style={{ backgroundColor: '#eee' }}>
       <MDBContainer className="py-5">
-        <MDBRow>
+        {/* <MDBRow>
           <MDBCol>
             <MDBBreadcrumb className="bg-light rounded-3 p-3 mb-4">
               <MDBBreadcrumbItem>
@@ -35,7 +35,7 @@ export default function ProfilePage() {
               <MDBBreadcrumbItem active>User Profile</MDBBreadcrumbItem>
             </MDBBreadcrumb>
           </MDBCol>
-        </MDBRow>
+        </MDBRow> */}
 
         <MDBRow>
           <MDBCol lg="4">
