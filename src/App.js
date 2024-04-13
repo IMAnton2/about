@@ -1,4 +1,4 @@
-import CV from './CV.pdf';
+import CV from './CV.html';
 import anton2 from './anton2.svg'
 import React from 'react';
 import {
