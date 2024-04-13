@@ -24,9 +24,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        var: ${{ runner.name }}
     - run: npm install
     - run: npm run build
     - run: rm -rf .git
