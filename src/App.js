@@ -41,10 +41,7 @@ export default function ProfilePage() {
               </MDBCardBody>
             </MDBCard>
 
-
-          </MDBCol>
-          <MDBCol lg="8">
-          <MDBCard className="mb-4 mb-lg-0">
+            <MDBCard className="mb-4 mb-lg-0">
               <MDBCardBody className="p-0">
                 <MDBListGroup flush className="rounded-3">
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
@@ -58,6 +55,8 @@ export default function ProfilePage() {
                 </MDBListGroup>
               </MDBCardBody>
             </MDBCard>
+          </MDBCol>
+          <MDBCol lg="8">
             <MDBCard className="mb-4">
               <MDBCardBody>
                 <MDBRow>
@@ -81,7 +80,29 @@ export default function ProfilePage() {
             </MDBCard>
 
             <MDBRow className="overflow-auto">
-            <MDBCol md="6">
+              <MDBCol md="6">
+                <MDBCard className="mb-4 mb-md-0">
+                  <MDBCardBody>
+                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Containerization and Orchestration</span></MDBCardText>
+                    <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Kubernetes</MDBCardText>
+                    <MDBProgress className="rounded">
+                      <MDBProgressBar width={90} valuemin={0} valuemax={100} />
+                    </MDBProgress>
+
+                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Tanzu</MDBCardText>
+                    <MDBProgress className="rounded">
+                      <MDBProgressBar width={85} valuemin={0} valuemax={100} />
+                    </MDBProgress>
+
+                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Docker</MDBCardText>
+                    <MDBProgress className="rounded">
+                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
+                    </MDBProgress>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+
+              <MDBCol md="6">
                 <MDBCard className="mb-4 mb-md-0">
                   <MDBCardBody>
                     <MDBCardText className="mb-4"><span className="text-primary font-italic me-1"> CI/CD Tools</span></MDBCardText>
@@ -112,29 +133,6 @@ export default function ProfilePage() {
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
-              <MDBCol md="6">
-                <MDBCard className="mb-4 mb-md-0">
-                  <MDBCardBody>
-                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Containerization and Orchestration</span></MDBCardText>
-                    <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Kubernetes</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={90} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Tanzu</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={85} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Docker</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-
-
               
               <MDBCol md="6">
                 <MDBCard className="mb-4 mb-md-0">
