@@ -24,5 +24,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: ls -la
     - run: npm ci
+    - run: npm install gh-pages@latest
     - run: npm run deploy
