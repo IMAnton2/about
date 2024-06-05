@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import CV from './CV.pdf';
+import CV from './Anton_Narodezki.pdf';
 import anton2 from './anton2.svg';
 import {
   MDBCol,
@@ -46,35 +46,12 @@ export default function ProfilePage() {
         { name: "GitHub Actions", level: 100 },
         { name: "GitLab CI/CD", level: 100 }
       ]
-    },
-    {
-      category: "Monitoring",
-      skills: [
-        { name: "Grafana", level: 100 },
-        { name: "Prometheus", level: 100 },
-        { name: "ELK stack", level: 85 },
-      ]
-    },
-    {
-      category: "OS",
-      skills: [
-        { name: "Red Hat", level: 100 },
-        { name: "Ubuntu", level: 100 },
-        { name: "Debian", level: 95 },
-      ]
-    },
-    {
-      category: "Code",
-      skills: [
-        { name: "Python", level: 90 },
-        { name: "Go", level: 85 },
-        { name: "Bash", level: 100 },
-        { name: "Powershell", level: 100 },
-        { name: "javascript", level: 90 },
-        { name: "Java", level: 85 },
-      ]
     }
   ];
+
+  const slideStyle = {
+    padding: '10px'
+  };
 
   return (
     <section style={{ backgroundColor: '#eee' }}>
@@ -103,6 +80,13 @@ export default function ProfilePage() {
               <MDBCardBody className="p-0">
                 <MDBListGroup flush className="rounded-3">
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
+                    <MDBCardText>Anton Narodezki</MDBCardText>
+                  </MDBListGroupItem>
+                  <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
+                    <img src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_mail_gmail_logo_icon_159346.png" alt="Gmail" style={{ width: '20px', height: '20px' }} />
+                    <MDBCardText>imanton2@gmail.com</MDBCardText>
+                  </MDBListGroupItem>
+                  <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="github" style={{ color: '#333333' }} />
                     <MDBCardText>github.com/IMAnton2</MDBCardText>
                   </MDBListGroupItem>
@@ -115,31 +99,9 @@ export default function ProfilePage() {
             </MDBCard>
           </MDBCol>
           <MDBCol lg="8">
-            <MDBCard className="mb-4">
-              <MDBCardBody>
-                <MDBRow>
-                  <MDBCol sm="3">
-                    <MDBCardText>Full Name</MDBCardText>
-                  </MDBCol>
-                  <MDBCol sm="9">
-                    <MDBCardText className="text-muted">Anton Narodezki</MDBCardText>
-                  </MDBCol>
-                </MDBRow>
-                <hr />
-                <MDBRow>
-                  <MDBCol sm="3">
-                    <MDBCardText>Email</MDBCardText>
-                  </MDBCol>
-                  <MDBCol sm="9">
-                    <MDBCardText className="text-muted">imanton2@gmail.com</MDBCardText>
-                  </MDBCol>
-                </MDBRow>
-              </MDBCardBody>
-            </MDBCard>
-
             <Slide slidesToShow={2}>
               {skillSlides.map((slide, index) => (
-                <div className="each-slide" key={index}>
+                <div className="each-slide" key={index} style={slideStyle}>
                   <MDBCard className="mb-4">
                     <MDBCardBody>
                       <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">{slide.category}</span></MDBCardText>
