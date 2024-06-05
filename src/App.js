@@ -110,7 +110,7 @@ export default function ProfilePage() {
               </MDBCardBody>
             </MDBCard>
 
-            <Slide>
+            <Slide slidesToShow={2}>
               {skillSlides.map((slide, index) => (
                 <div className="each-slide" key={index}>
                   <MDBCard className="mb-4">
