@@ -1,6 +1,8 @@
+import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 import CV from './CV.pdf';
 import anton2 from './anton2.svg';
-import React from 'react';
 import {
   MDBCol,
   MDBContainer,
@@ -18,6 +20,35 @@ import {
 } from 'mdb-react-ui-kit';
 
 export default function ProfilePage() {
+  const skillSlides = [
+    {
+      category: "Containerization and Orchestration",
+      skills: [
+        { name: "Kubernetes", level: 100 },
+        { name: "Tanzu", level: 85 },
+        { name: "Docker", level: 100 }
+      ]
+    },
+    {
+      category: "Infrastructure as Code",
+      skills: [
+        { name: "Terraform", level: 85 },
+        { name: "Ansible", level: 100 },
+        { name: "Puppet", level: 80 }
+      ]
+    },
+    {
+      category: "CI/CD Tools",
+      skills: [
+        { name: "Jenkins", level: 100 },
+        { name: "ArgoCD", level: 85 },
+        { name: "Azure DevOps", level: 100 },
+        { name: "GitHub Actions", level: 100 },
+        { name: "GitLab CI/CD", level: 100 }
+      ]
+    }
+  ];
+
   return (
     <section style={{ backgroundColor: '#eee' }}>
       <MDBContainer className="py-5">
@@ -79,85 +110,25 @@ export default function ProfilePage() {
               </MDBCardBody>
             </MDBCard>
 
-            <MDBRow className="overflow-auto">
-              <MDBCol md="6">
-                <MDBCard className="mb-4 mb-md-0">
-                  <MDBCardBody>
-                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Containerization and Orchestration</span></MDBCardText>
-                    <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Kubernetes</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Tanzu</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={85} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Docker</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-
-              <MDBCol md="6">
-                <MDBCard className="mb-4 mb-md-0">
-                  <MDBCardBody>
-                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1"> CI/CD Tools</span></MDBCardText>
-                    <MDBCardText className="mb-1" style={{ fontSize: '.77rem', maxHeight: '300px', overflowY: 'auto' }}>Jenkins</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>ArgoCD</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={85} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Azure DevOps</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitHub Actions</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>GitLab CI/CD</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              
-              <MDBCol md="6">
-                <MDBCard className="mb-4 mb-md-0">
-                  <MDBCardBody>
-                    <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">Infrastructure as Code</span></MDBCardText>
-                    <MDBCardText className="mb-1" style={{ fontSize: '.77rem' }}>Terraform</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={85} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Ansible</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={100} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                    <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>Puppet</MDBCardText>
-                    <MDBProgress className="rounded">
-                      <MDBProgressBar width={80} valuemin={0} valuemax={100} />
-                    </MDBProgress>
-
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-
-            </MDBRow>
+            <Slide>
+              {skillSlides.map((slide, index) => (
+                <div className="each-slide" key={index}>
+                  <MDBCard className="mb-4">
+                    <MDBCardBody>
+                      <MDBCardText className="mb-4"><span className="text-primary font-italic me-1">{slide.category}</span></MDBCardText>
+                      {slide.skills.map((skill, skillIndex) => (
+                        <div key={skillIndex}>
+                          <MDBCardText className="mt-4 mb-1" style={{ fontSize: '.77rem' }}>{skill.name}</MDBCardText>
+                          <MDBProgress className="rounded">
+                            <MDBProgressBar width={skill.level} valuemin={0} valuemax={100} />
+                          </MDBProgress>
+                        </div>
+                      ))}
+                    </MDBCardBody>
+                  </MDBCard>
+                </div>
+              ))}
+            </Slide>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
