@@ -46,6 +46,33 @@ export default function ProfilePage() {
         { name: "GitHub Actions", level: 100 },
         { name: "GitLab CI/CD", level: 100 }
       ]
+    },
+    {
+      category: "Monitoring",
+      skills: [
+        { name: "Grafana", level: 100 },
+        { name: "Prometheus", level: 100 },
+        { name: "ELK stack", level: 85 },
+      ]
+    },
+    {
+      category: "OS",
+      skills: [
+        { name: "Red Hat", level: 100 },
+        { name: "Ubuntu", level: 100 },
+        { name: "Debian", level: 95 },
+      ]
+    },
+    {
+      category: "Code",
+      skills: [
+        { name: "Python", level: 90 },
+        { name: "Go", level: 85 },
+        { name: "Bash", level: 100 },
+        { name: "Powershell", level: 100 },
+        { name: "javascript", level: 90 },
+        { name: "Java", level: 85 },
+      ]
     }
   ];
 
