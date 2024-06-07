@@ -6,8 +6,16 @@ name: Node.js CI
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - '*.md'
+      - '*.adoc'
+      - '*.pdf'
   pull_request:
     branches: [ "main" ]
+    paths-ignore:
+      - '*.md'
+      - '*.adoc'
+      - '*.pdf'
 
 jobs:
   build:
