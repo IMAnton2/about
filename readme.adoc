@@ -9,6 +9,8 @@
 This project is a profile page developed using React, MDBReact, and `react-slideshow-image`. +
 It features a personal profile section, including a profile picture, contact buttons, social media links, and a slideshow displaying various technical skills. +
 
+You can visit the project site on GitHub Pages: https://imanton2.github.io/about/ +
+
 == Features
 
 * Profile picture and brief introduction
