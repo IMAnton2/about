@@ -11,48 +11,32 @@ It features a personal profile section, including a profile picture, contact but
 
 You can visit the project site on GitHub Pages: https://imanton2.github.io/about/ +
 
-== Features
+== GitHub Actions Workflow
 
-* Profile picture and brief introduction
-* Contact buttons for WhatsApp and CV download
-* Social media links (GitHub and LinkedIn)
-* Email address with an icon
-* Slideshow showcasing technical skills
+
 
 == Installation
 
-1. Clone the repository:
-+
 [source,bash]
 ----
+# Clone the repository:
 git clone https://github.com/IMAnton2/profile-page.git
-----
 
-2. Navigate to the project directory:
-+
-[source,bash]
-----
+# Navigate to the project directory:
 cd profile-page
-----
 
-3. Install dependencies:
-+
-[source,bash]
-----
+# Install dependencies:
 npm install
 ----
 
 == Usage
 
-To start the development server, run:
 [source,bash]
 ----
+# To start the development server, run:
 npm start
-----
 
-To create a production build, run:
-[source,bash]
-----
+# To create a production build, run:
 npm run build
 ----
 
@@ -67,6 +51,7 @@ npm run build
 * `src/App.js`: Main component file
 * `src/anton2.svg`: Profile picture
 * `src/Anton_Narodezki.pdf`: CV file
+* `.github/workflows/node.js.yml`: workflow file, deploys to `gh-pages`
 
 == Contact
 
