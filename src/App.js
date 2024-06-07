@@ -88,7 +88,7 @@ export default function ProfilePage() {
                   </MDBListGroupItem>
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="github" style={{ color: '#333333' }} />
-                    <MDBCardText>github.com/IMAnton2</MDBCardText>
+                    <MDBCardText>github.com/imanton2</MDBCardText>
                   </MDBListGroupItem>
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="linkedin" style={{ color: '#3b5998' }} />
