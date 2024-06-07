@@ -1,0 +1,77 @@
+= Profile Page Project
+
+:toc:
+:toc-placement!:
+:icons: font
+
+== Introduction
+
+This project is a profile page developed using React, MDBReact, and `react-slideshow-image`. +
+It features a personal profile section, including a profile picture, contact buttons, social media links, and a slideshow displaying various technical skills. +
+
+== Features
+
+* Profile picture and brief introduction
+* Contact buttons for WhatsApp and CV download
+* Social media links (GitHub and LinkedIn)
+* Email address with an icon
+* Slideshow showcasing technical skills
+
+== Installation
+
+1. Clone the repository:
++
+[source,bash]
+----
+git clone https://github.com/IMAnton2/profile-page.git
+----
+
+2. Navigate to the project directory:
++
+[source,bash]
+----
+cd profile-page
+----
+
+3. Install dependencies:
++
+[source,bash]
+----
+npm install
+----
+
+== Usage
+
+To start the development server, run:
+[source,bash]
+----
+npm start
+----
+
+To create a production build, run:
+[source,bash]
+----
+npm run build
+----
+
+== Dependencies
+
+* React
+* MDBReact
+* `react-slideshow-image`
+
+== File Structure
+
+* `src/App.js`: Main component file
+* `src/anton2.svg`: Profile picture
+* `src/Anton_Narodezki.pdf`: CV file
+
+== Contact
+
+For any inquiries or feedback, please contact:
+* Anton Narodezki
+* Email: imanton2@gmail.com
+
+== License
+
+This project is licensed under the MIT License.
